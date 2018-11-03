@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Chapter10Exercises {
+public class Chapter11Exercises {
     public static void main(String[] args) {
         System.out.println("Pick exercise");
         Scanner sc = new Scanner(System.in);
