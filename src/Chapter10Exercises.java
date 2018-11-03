@@ -17,7 +17,30 @@ public class Chapter10Exercises {
             System.out.println("\nFaculty");
             Faculty b = new Faculty();
             System.out.println(b.toString());
+            System.out.println("\nStaff");
+            Staff c = new Staff();
+            System.out.println(c.toString());
+            System.out.println("At last you can create a student");
+            //Could have made Staff and Faculty. But should be the same
+                System.out.println("Enter name: ");
+                String name = sc.nextLine();//Wont work
 
+                System.out.println("Enter Address: ");
+                String address = sc.nextLine();
+
+                System.out.println("Enter phoneNumber: ");
+                int phoneNumber = sc.nextInt();
+
+                System.out.println("Enter Email: ");
+                String e_mail = sc.next();
+
+                System.out.println("Enter Status: ");
+                String status = sc.next();
+
+            System.out.println();
+             Student one = new Student(name,address,phoneNumber,e_mail,status);
+            System.out.println("Student");
+            System.out.println(one.toString());
 
         }
     }

@@ -12,7 +12,7 @@ public class Faculty extends Employee {
         this.officeHours = officeHours;
         this.rank = rank;
     }
-
+    @Override
     public String toString()
     {return super.toString() + "\nOffice hours: " + officeHours + "\nRank: " + rank;}
 

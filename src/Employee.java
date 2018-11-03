@@ -16,7 +16,7 @@ public class Employee extends Person {
         this.dateHired = dateHired;
         this.office = office;
     }
-
+    @Override
     public String toString()
     {return super.toString() + "\nSalary: " + salary + "\nDate hired: " + dateHired.getDay() +" "+ dateHired.getMonth()+ " " + dateHired.getYear() +
      "\nOffice: " + office;
