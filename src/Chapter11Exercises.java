@@ -58,7 +58,7 @@ public class Chapter11Exercises {
 
             //Next step display their "toString" with a loop
             for (int i = 0; i < list.size() ; i++) {
-                System.out.println("Object at index "+i +"'s toString");
+                System.out.println("Object at index "+ i +"'s toString");
                 System.out.println(list.get(i).toString());
                 System.out.println();
             }
