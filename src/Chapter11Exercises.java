@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Chapter11Exercises {
@@ -45,6 +46,22 @@ public class Chapter11Exercises {
             System.out.println("Student");
             System.out.println(one.toString());
 
+        }
+        if (choice == 6)
+        {
+            //The exercise says to put specific objects in array and display em, so i just use my prev used objects
+            ArrayList<Object> list = new ArrayList<>();
+            list.add(new Student());
+            list.add(new Staff());
+            list.add(new Person());
+            list.add(new Faculty());
+
+            //Next step display their "toString" with a loop
+            for (int i = 0; i < list.size() ; i++) {
+                System.out.println("Object at index "+i +"'s toString");
+                System.out.println(list.get(i).toString());
+                System.out.println();
+            }
         }
     }
 
