@@ -8,23 +8,26 @@ public class Chapter11Exercises {
         //Make person class with Student and Employee subclasses etc.
         if (choice==2)
         {
-            Student d = new Student();
+            Person o = new Person();//Create noArg Person
+            System.out.println("\nPerson");
+            System.out.println(o.toString());
+            Student d = new Student(); //Create noArg Student
             System.out.println("\nStudent");
             System.out.println(d.toString());
             System.out.println("\nEmployee");
-            Employee a = new Employee();
+            Employee a = new Employee(); //Create noArg Employee
             System.out.println(a.toString());
             System.out.println("\nFaculty");
-            Faculty b = new Faculty();
+            Faculty b = new Faculty(); //Create noArg Faculty member
             System.out.println(b.toString());
-            System.out.println("\nStaff");
+            System.out.println("\nStaff"); //Create noArg Staff member
             Staff c = new Staff();
             System.out.println(c.toString());
-            System.out.println("At last you can create a student");
+            System.out.println("\nAt last you can create a student");
             //Could have made Staff and Faculty. But should be the same
-                System.out.println("Enter name: ");
-                String name = sc.nextLine();//Wont work
-
+                System.out.println("Enter surname: ");
+                String nam = sc.nextLine();//Fixes the code from skipping name (by adding another nextLine apparently
+                String name = sc.nextLine();
                 System.out.println("Enter Address: ");
                 String address = sc.nextLine();
 
